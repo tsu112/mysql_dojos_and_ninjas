@@ -1,0 +1,30 @@
+insert into dojos (name)
+values ("Sue's"), ("Ada's"), ("Jayda's")
+
+delete from dojos where id = 1
+delete from dojos where id = 2
+delete from dojos where id = 3
+
+insert into dojos (name)
+values ("Kash's"), ("Alex's"), ("Aiden's")
+
+insert into ninjas(f_name, l_name, age, dojo_id)
+values ("Sue", "Yang", 35, 4), ("Ada", "Yang", 13, 4), ("Jayda", "Lee", 12, 4)
+
+insert into ninjas(f_name, l_name, age, dojo_id)
+values ("Holly", "Moua", 23, 5), ("Kayla", "Moua", 19, 5), ("Haley", "Moua", 17, 5)
+
+insert into ninjas(f_name, l_name, age, dojo_id)
+values ("Victoria", "Moua", 17, 6),("Lyra", "Moua", 10, 6), ("Athan", "Moua", 3, 6)
+
+select * from ninjas where dojo_id = 4
+
+select * from ninjas where dojo_id = 6
+
+select dojo_id
+from ninjas
+order by id desc
+limit 1
+
+
+
